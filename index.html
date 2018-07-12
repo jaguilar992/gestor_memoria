@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Emulador de memoria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+    <!-- grafico para representar la memoria -->
+      <div class="col-sm-12 col-lg-12">
+        <h3>Emulador de memoria</h3>
+        <select id="slc-metodo" class="form-control">
+          <option value="" hidden="hidden">Seleccione un método de particionamiento</option>
+          <option value="1">Particionamiento fijo: Igual Tamaño</option>
+          <option value="2">Particionamiento fijo: Distinto Tamaño</option>
+          <option value="3">Particionamiento dinámico: Mejor Ajuste</option>
+          <option value="4">Particionamiento dinámico: Sistema de Colegas</option>
+          <option value="5">Paginación</option>
+        </select>
+        <h4>Memoria<h4>
+        <div class="col-sm-12 col-lg-12 libre" id='div-memoria'></div>
+      </div>
+        <!-- Consola para cargar o liberar procesos -->
+      
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/fijo_igual.js"></script>
+  <script src="./js/fijo_distinto.js"></script>
+  <script src="./js/colegas.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+#div-memoria{
+	border: solid 2px #e55304;
+	height: 70px;
+	padding: 0px;
+}
+
+.libre, .ocupado {
+	float: left;
+	height: 66px;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: 900;
+}
+
+.libre{
+	background-color: #d6d6d6;
+	border: solid 1px #e55304;
+	line-height: 66px;
+}
+
+.ocupado{
+	line-height: 20px;
+	background-color: rgba(0, 157, 214,0.5);
+	height: 64px;
+}
+
+.libre p, .ocupado p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#consola{
+	font-family: "Fira Code";
+	color: white;
+	background-color: #303030;
+}
