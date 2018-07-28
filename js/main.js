@@ -38,16 +38,16 @@ function format(n){
   }
 }
 
-$(document).ready(function(){     
-      $("#txt-cmd").keypress(function(e) {
-        if(e.which == 13) {
-          obtenerDatos();
-        }
-      });
+$("#txt-cmd").keypress(function(e) {
+  if(e.which == 13) {
+    obtenerDatos();
+  }
 });
 
 function obtenerDatos()
 {
     var valor = $("#txt-cmd").val();
     $("#consola").html(valor);
+    $("#txt-cmd").val('');
+    $("#txt-cmd").focus();
 }
