@@ -37,3 +37,17 @@ function format(n){
     return n+" MB";
   }
 }
+
+$(document).ready(function(){     
+      $("#txt-cmd").keypress(function(e) {
+        if(e.which == 13) {
+          obtenerDatos();
+        }
+      });
+});
+
+function obtenerDatos()
+{
+    var valor = $("#txt-cmd").val();
+    $("#consola").html(valor);
+}
