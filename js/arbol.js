@@ -20,7 +20,7 @@ class arbol {
 			} else {
 				return false;
 			}
-		} else if (subArb.raiz.size > size && size > subArb.raiz.size / 2) {
+		} else if (subArb.raiz.size >= size && size > subArb.raiz.size / 2) {
 			if (subArb.raiz.proceso == null) {
 				subArb.raiz.proceso = proceso;
 				subArb.raiz.esp = size;
@@ -66,7 +66,7 @@ class arbol {
 	}
 
 	buscarEspacio(size, subArb=this) {
-		if (!subArb.raiz.padre && subArb.raiz.size > size 
+		if (!subArb.raiz.padre && subArb.raiz.size >= size 
 			&& subArb.raiz.proceso == null) {
 			return true;
 		} else if (subArb.raiz.nIzq != null) {
