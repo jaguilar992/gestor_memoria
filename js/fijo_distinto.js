@@ -81,3 +81,19 @@ class distinto{
 }
 
 var d = new distinto(1024);
+
+/*function Ingresar_Memoria(){
+  var opc = document.getElementById("slc-metodo").value;
+  switch(opc){
+    case "1":
+      f.set(1024);
+      break;
+    case "2":
+      d.set(1024);
+      break;
+    case "3":
+    case "4":
+    case "5":
+  }
+  
+}*/

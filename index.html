@@ -25,17 +25,30 @@
         <h4>Memoria<h4>
         <div class="col-sm-12 col-lg-12 libre" id='div-memoria'></div>
       </div>
-        <!-- Consola para cargar o liberar procesos -->
-      <div class="col-sm-12 col-lg-12">
-        <h4>Consola</h4>
-        <input type="text" id="txt-cmd" class="form-control">
+        <!-- Botones para cargar o liberar procesos -->
+      <div class="col-sm-1 col-lg-2 margen">
+        <input type="button" class="btn btn-success" id="btn-cargarMemoria" value="Cargar Memoria" onclick="Memoria();">
       </div>
-      <div class="col-sm-12 col-lg-12">
-        <dir id="consola"></dir>
+      <div class="col-sm-1 col-lg-2 margen">
+        <input type="button" class="btn btn-success" id="btn-cargarProceso" value="Cargar Proceso" onclick="Proceso();">
+      </div>
+      <div class="col-sm-1 col-lg-8 margen">
+        <input type="button" class="btn btn-danger" id="btn-LiberarProceso" value="Liberar Proceso" onclick="Liberar();">
+      </div>
+      <div class="col-sm-12 col-lg-5 leyenda">
+        <h4 id="h4">Universidad Nacional Autónoma de Honduras (UNAH)</h4>
+        <p>Denis Adonis Henríquez Maradiaga</p>
+        <p>Denuar Salomón Padilla Torres</p>
+        <p>José Antonio Aguilar Lagos</p>
+        <p>Melvin Eduardo Maldonado Moncada</p>
+      </div>
+      <div id="logo" class="col-sm-12 col-lg-6">
+        <img src="img/2.png" >
       </div>
     </div>
   </div>
   <script src="./js/jquery.min.js"></script>
+  <script src="./js/botones.js"></script>
   <script src="./js/fijo_igual.js"></script>
   <script src="./js/fijo_distinto.js"></script>
   <script src="./js/dinamico.js"></script>

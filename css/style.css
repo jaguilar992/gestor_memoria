@@ -35,3 +35,25 @@
 	background-color: #303030;
 	height: 100px;
 }
+
+.margen{
+	margin-top: 50px;
+}
+
+.leyenda{
+	margin: 90px;
+	box-shadow:1px 1px 10px 1px #303030;
+	border-radius: 5px;
+	width: 35%;
+	padding: 10px;
+}
+.btn-success , .btn-danger{
+	box-shadow:1px 1px 6px 1px #303030;
+}
+p , #h4{
+	text-align: center;
+}
+
+#logo{
+	padding-left: 145px;
+}
